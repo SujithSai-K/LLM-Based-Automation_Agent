@@ -465,9 +465,10 @@ async def run_task(task: str):
             A8(**json.loads(arguments))
         if "A9"== task_code:
             print("success")
-            return {"message": "success"}
+            
             print(A9(**json.loads(arguments)))
             A9(**json.loads(arguments))
+            return {"message": "success"}
             
             
         if "A10"== task_code:
